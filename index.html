@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="searchContainer">
+            <input type="text" id="input" placeholder="Enter City name" autocomplete="off">
+            <i class="fa fa-search" aria-hidden="true" id="searchIcon"></i>
+        </div>
+        <h2 id="city">Agra</h2>
+        <div class="mainContainer">
+            <img src="./image/clear.png" alt="" id="statusIcon">
+            <h3 id="status">Clear</h3>
+            <h1 id="temp">24&#176;</h1>
+            <table id="otherDetails">
+                <tr>
+                    <td>
+                        <span id="feel">WIND</span> <br>
+                        <span id="wind">25&#176;</span>
+                        <i class="fa fa-thermometer-empty" aria-hidden="true" id="windIcon"></i>
+                    </td>
+                    <td>
+                        <span id="feel">FEELS LIKE</span> <br>
+                        <span id="temp2">25&#176;</span>
+                        <i class="fa fa-thermometer-empty" aria-hidden="true" id="termometer"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="feel">INDEX UV</span> <br>
+                        <span id="temp2">25&#176;</span>
+                        <i class="fa fa-sun-o" aria-hidden="true" id="uv"></i>
+                    </td>
+                    <td>
+                        <span id="feel">PRESSURE</span> <br>
+                        <span id="pressure">25&#176;</span>
+                        <i class="fa fa-thermometer-empty" aria-hidden="true" id="pressureIcon"></i>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
